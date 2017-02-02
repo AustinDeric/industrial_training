@@ -19,6 +19,7 @@ public:
   void visionCallback(const fake_ar_publisher::ARMarkerConstPtr& msg)
   {
     last_msg_ = msg;
+    ROS_INFO_STREAM(*last_msg_);
   }
   
   ros::Subscriber ar_sub_;
